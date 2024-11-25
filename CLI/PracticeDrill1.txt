@@ -23,7 +23,7 @@ Explaination -->  (i) The command creates the nested directories hello/five/six/
 
 
 2. Delete all the files having the .log extension
-Command      --> find -type f -name "*.log" exec rm -f {} \;
+Command      --> find -type f -name "*.log" -exec rm -f {} \;
 Explaination --> searches for all files (-type f) with a .log extension and deletes them using the rm -f command. The {} is replaced by each file found, and \; indicates the end of the exec command.
 
 3. Add the following content to a.txt
